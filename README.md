@@ -27,15 +27,15 @@ I conducted exploratory data analysis to understand data  quality, and key patte
 
 Modeling
 I assess the predictive performance of 5 models (on test data) and a  5-fold cross-validation: 
-	•	Linear regression — Core
-	•	Linear regression — Expanded
-	•	Polynomial regression with age² — Core
-	•	Ridge regression — Core
-	•	Lasso regression — Core
+	- Linear regression — Core
+	- Linear regression — Expanded
+	- Polynomial regression with age² — Core
+	- Ridge regression — Core
+	- Lasso regression — Core
 
 where
-	•	Core: Price = age + odometer + manufacturer
-	•	Expanded: Price = age + odometer + manufacturer + paint color + transmission + fuel + vehicle type
+	- *Core*: Price = age + odometer + manufacturer
+	- *Expanded*: Price = age + odometer + manufacturer + paint color + transmission + fuel + vehicle type
 
 I started with a simple parsimonious multiple regression model with core features highly predictive of price (age, odometer, and manufacturer), and then expanded the set of variables to include other features. To illustrate a polynomial regression, I also estimated the core model using a quadratic (polynomial 2) of age given the non-linear nature of the relationship between age and price observed in the explorative data analysis. 
 
